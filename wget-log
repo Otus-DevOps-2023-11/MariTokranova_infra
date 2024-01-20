@@ -1,0 +1,6 @@
+--2024-01-11 22:23:15--  https://apt.releases.hashicorp.com/gpg
+Resolving apt.releases.hashicorp.com (apt.releases.hashicorp.com)... 18.165.140.122, 18.165.140.50, 18.165.140.56, ...
+Connecting to apt.releases.hashicorp.com (apt.releases.hashicorp.com)|18.165.140.122|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2024-01-11 22:23:15 ERROR 404: Not Found.
+
