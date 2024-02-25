@@ -2,13 +2,15 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "{{ user `service_account_key_file` }}",
-            "folder_id": "{{ user `folder_id` }}",
-            "source_image_family": "{{ user `source_image_family` }}",
-            "use_ipv4_nat": true,
-            "image_name": "reddit-bd-{{timestamp}}",
-            "image_family": "reddit-bd",
+            "service_account_key_file": "key.json",
+            "folder_id": "b1ga20mtlbn6bil3cte6",
+            "source_image_family": "ubuntu-1604-lts",
+            "image_name": "reddit-base-{{timestamp}}",
+            "image_family": "reddit-base",
+            "zone": "ru-central1-a", 
+            "subnet_id": "e9brabaduasj637dfnrs",
             "ssh_username": "ubuntu",
+            "use_ipv4_nat": "true",
             "platform_id": "standard-v1"
         }
     ],
@@ -19,4 +21,4 @@
             "execute_command": "sudo {{.Path}}"
         }
     ]
-}
+

@@ -2,13 +2,13 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "service-account-key.json.example",
+            "service_account_key_file": "key.json",
             "folder_id": "b1ga20mtlbn6bil3cte6",
-            "zone": "ru-central1-a", 
             "source_image_family": "ubuntu-1604-lts",
-            "subnet_id": "e9brabaduasj637dfnrs",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
+            "zone": "ru-central1-a", 
+            "subnet_id": "e9brabaduasj637dfnrs",
             "ssh_username": "ubuntu",
             "use_ipv4_nat": "true",
             "platform_id": "standard-v1"
