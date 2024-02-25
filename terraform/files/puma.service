@@ -1,11 +1,12 @@
+
 [Unit]
 Description=Puma HTTP Server
 After=network.target
 
 [Service]
 Type=simple
-User=appuser	
-WorkingDirectory=/home/appuser/reddit
+User=ubuntu
+WorkingDirectory=/home/ubuntu/reddit
 ExecStart=/bin/bash -lc 'puma'
 Restart=always
 
