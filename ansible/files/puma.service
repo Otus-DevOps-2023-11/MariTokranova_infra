@@ -4,9 +4,10 @@ After=network.target
 
 [Service]
 Type=simple
-User=ubuntu	
+EnvironmentFile=/home/ubuntu/db_config
+User=ubuntu
 WorkingDirectory=/home/ubuntu/reddit
-ExecStart=/bin/bash -lc 'puma'
+ExecStart=/ubuntu/local/bin/puma
 Restart=always
 
 [Install]
