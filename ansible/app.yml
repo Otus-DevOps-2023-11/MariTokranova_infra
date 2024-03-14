@@ -2,7 +2,7 @@
   hosts: app
   become: true
   vars:
-   db_host: 178.154.221.120
+   db_host: 10.128.0.30
   tasks:
     - name: Add unit file for Puma
       copy:
@@ -16,6 +16,7 @@
         dest: /home/ubuntu/db_config
         owner: ubuntu
         group: ubuntu
+        
     - name: enable puma
       systemd: name=puma enabled=yes
 
