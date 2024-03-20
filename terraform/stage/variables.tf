@@ -9,6 +9,7 @@ variable zone {
   # Значение по умолчанию
   default = "ru-central1-a"
 }
+
 variable public_key_path {
   # Описание переменной
   description = "Path to the public key used for ssh access"
@@ -35,3 +36,4 @@ description = "Disk image for reddit app"
 variable db_disk_image {
 description = "Disk image for reddit db"
 }
+
